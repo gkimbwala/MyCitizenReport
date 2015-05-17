@@ -12,6 +12,8 @@
 	<dict>
 		<key>07607E1117F1D08660902EBB77DBE2A82D9803E9</key>
 		<string>https://github.com/gkimbwala/MyCitizenReport.git</string>
+		<key>FA7317A4A3129F403D5192BDEF8253EE342E0668</key>
+		<string>https://github.com/baroobob/excel_to_csv</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>mycitizenreport-app/platforms/ios/Hello World.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>07607E1117F1D08660902EBB77DBE2A82D9803E9</key>
 		<string>../../../../..</string>
+		<key>FA7317A4A3129F403D5192BDEF8253EE342E0668</key>
+		<string>../../../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/gkimbwala/MyCitizenReport.git</string>
@@ -28,6 +32,14 @@
 	<string>07607E1117F1D08660902EBB77DBE2A82D9803E9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FA7317A4A3129F403D5192BDEF8253EE342E0668</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
