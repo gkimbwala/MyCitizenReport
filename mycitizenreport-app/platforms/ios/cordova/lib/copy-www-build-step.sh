@@ -23,6 +23,8 @@
 #   This script should not be called directly.
 #   It is called as a build step from Xcode.
 
+cp -fR ../../www/ www/
+
 SRC_DIR="www/"
 DST_DIR="$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME/www"
 COPY_HIDDEN=
