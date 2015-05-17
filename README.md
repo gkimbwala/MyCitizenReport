@@ -1,5 +1,10 @@
 # MyCitizenReport
 
+######Phonegap tutorial (slightly outdated)
+http://docs.phonegap.com/en/edge/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide
+
+######What I (David) did
+
 The command to install phonegap via NPM (I used the Homebrew package manager to install NodeJS on my Macbook. NodeJS has its own package manager NPM):
 
 * brew install nodejs
