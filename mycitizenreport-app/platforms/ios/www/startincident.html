@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-	<header><center><strong>START INCIDENT</strong></center>
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-    </header>
-	<body><center>
-		<div align="left">
+<head>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/stickyfooter.css">
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/incident.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+</head>
+
+<body>
+    <div id="wrap">
+    <div id="main">
+	<header><center><strong>START INCIDENT</strong></center> </header>
+	<div align="left">
 		     <form class="form-horizontal" role="form">
                 <div class="col-sm-6 col-lg-4">
                 <div class="form-group">
                     <label for="inputLabel3" class="col-md-4 control-label">Location:</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" id="inputLabel3" name="Location" placeholder="Location">
+                        <input type="text" class="form-control" id="incident_location" name="Location" placeholder="Location">
                             </div>
                     </div>
                 </div>
@@ -18,7 +29,7 @@
                 <div class="form-group">
                     <label for="inputLabel3" class="col-md-4 control-label">Time:</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" id="inputLabel3" name="Time" placeholder="Time">
+                        <input type="text" class="form-control" id="incident_time" name="Time" placeholder="Time">
                             </div>
                     </div>
                 </div>
@@ -27,17 +38,19 @@
                 <div class="form-group">
                     <label for="inputLabel3" class="col-md-4 control-label">Details:</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" id="inputLabel3" name="Details" placeholder="Details">
+                        <input type="text" class="form-control" id="incident_description" name="Details" placeholder="Details">
                             </div>
                     </div>
                 </div>
-
-                <div id="report_button"> 
-                     <button type="button" class="btn btn-danger">Report</button>
+                <div id="report_button">
+                     <button type="button" class="btn btn-danger" id="record_incident_button">Record</button>
+                     <button type="button" class="btn btn-danger" id="submit_incident_button" style='opacity: .5'>Report</button>
                 </div>
 
             </form>
-        </div></center>
+        </div>
+        </div><!-- main -->
+        </div><!-- wrap -->
     </body>
 	
     <script src="footer.js"></script>

@@ -44,8 +44,8 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
         
-        navigator.geolocation.getCurrentPosition(app.onGeoSuccess, app.onGeoError);
-        app.recordAudio();
+        //navigator.geolocation.getCurrentPosition(app.onGeoSuccess, app.onGeoError);
+        //app.recordAudio();
     },
     onGeoSuccess: function(position) {
         alert(position.coords.latitude + " " + position.coords.longitude);
