@@ -43,7 +43,36 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-    }
+        
+        navigator.geolocation.getCurrentPosition(app.onGeoSuccess, app.onGeoError);
+        app.recordAudio();
+    },
+    onGeoSuccess: function(position) {
+        alert(position.coords.latitude + " " + position.coords.longitude);
+    },
+    onGeoError: function(error) {
+        alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
+    },
+    recordAudio: function() {
+        app.currentRecording = "documents://" + (new Date().getTime()) + ".wav";
+        alert("Recording to " + app.currentRecording);
+        var mediaRec = new Media(app.currentRecording, app.onRecordSuccess, app.onRecordError);
+        // Record audio
+        mediaRec.startRecord();
+        setTimeout(function() {
+            mediaRec.stopRecord();
+            alert("Done recording");
+        }, 1000);
+    },
+    onRecordSuccess: function() {
+        alert("recording successful");
+        var mediaPlay = new Media(app.currentRecording, function() { alert("Done Playing"); });
+        mediaPlay.play();
+    },
+    onRecordError: function(error) {
+        alert("recording failed: " + error.code);
+    },
+    currentRecording: "",
+    
+    
 };
