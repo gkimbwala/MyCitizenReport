@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+	<header><center><strong>MAIN MENU</strong></center></header>
+	<body><center>
+		<div>
+		<p>
+			
+		<a href="Registration">Registration</a></p><p>
+		<a href="StartIncident">Start Incident</a></p><p>
+		<a href="Links">Helpful Links</a></p><p>
+		<a href="Complaints">Complaints</a></p><p>
+		<a href="Kudos">Kudos</a></p><p>
+	</p></div></center>
+</body>
